@@ -8,12 +8,20 @@ import { FaCalculator } from 'react-icons/fa';
 import { IoGameController } from 'react-icons/io5';
 import { FaClipboardList } from 'react-icons/fa';
 import { IoBagHandle } from 'react-icons/io5';
+import { PiArticleMediumFill } from 'react-icons/pi';
 
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
+        <ProjectCard
+          // src={connect4}
+          Icon={PiArticleMediumFill}
+          link="https://github.com/Utkarsh020470/insights_hub_client"
+          h3="Insights Hub"
+          p="Blog Website"
+        />
         <ProjectCard
           // src={connect4}
           Icon={IoGameController}
