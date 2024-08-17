@@ -1,9 +1,13 @@
 import styles from './ProjectsStyles.module.css';
-import connect4 from '@/assets/connect4game.png';
-import todolist from '@/assets/todolist.png';
-import ecommerce from '@/assets/ecommerce.png';
-import calculator from '@/assets/calculator.png';
+// import connect4 from '@/assets/connect4game.png';
+// import todolist from '@/assets/todolist.png';
+// import ecommerce from '@/assets/ecommerce.png';
+// import calculator from '@/assets/calculator.png';
 import ProjectCard from '@/common/ProjectCard';
+import { FaCalculator } from 'react-icons/fa';
+import { IoGameController } from 'react-icons/io5';
+import { FaClipboardList } from 'react-icons/fa';
+import { IoBagHandle } from 'react-icons/io5';
 
 function Projects() {
   return (
@@ -11,25 +15,29 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={connect4}
+          // src={connect4}
+          Icon={IoGameController}
           link="https://github.com/Utkarsh020470/CONNECT-4-GAME"
           h3="Connect-4"
           p="Game"
         />
         <ProjectCard
-          src={todolist}
+          // src={todolist}
+          Icon={FaClipboardList}
           link="https://github.com/Utkarsh020470/TO-DO-LIST"
           h3="To-Do List"
           p="Task Manager"
         />
         <ProjectCard
-          src={ecommerce}
+          // src={ecommerce}
+          Icon={IoBagHandle}
           link="https://github.com/Utkarsh020470/E-COMMERCE-CLONE"
           h3="E-Commerce"
           p="Clone Website"
         />
         <ProjectCard
-          src={calculator}
+          // src={calculator}
+          Icon={FaCalculator}
           link="https://github.com/Utkarsh020470/Calculator"
           h3="Calculator"
           p="Maths Operations"

@@ -109,11 +109,16 @@ p {
 
 .hero-icon {
   font-size: 1.75rem;
+}
+
+.hero-icon,
+.project-card-icon {
   color: black;
 }
 
 [data-theme='dark'] {
-  .hero-icon {
+  .hero-icon,
+  .project-card-icon {
     color: white;
   }
 }
